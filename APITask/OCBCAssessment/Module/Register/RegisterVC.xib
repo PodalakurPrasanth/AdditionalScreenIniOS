@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="OCBCAssessment" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordCustomTextField" destination="AkV-Ij-pUF" id="Mzo-SV-W9o"/>
+                <outlet property="passwordCustomTextField" destination="sAd-gz-5R2" id="kOV-ct-HAv"/>
+                <outlet property="registerCustomButton" destination="qZu-99-4vO" id="YOx-76-ok7"/>
+                <outlet property="usernameCustomTextField" destination="Jhb-sx-5Ym" id="0C5-Cl-FfL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqc-25-PFB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSZ-M3-vm0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Tx-jO-xvu">
+                                    <rect key="frame" x="20" y="0.0" width="374" height="818"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32C-WN-8Qx">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-N9-JQJ">
+                                            <rect key="frame" x="0.0" y="78.5" width="374" height="290"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-sx-5Ym" customClass="CustomTextField" customModule="OCBCAssessment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="90"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="lAL-cf-TR0"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Username"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Username is required"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showErrorMessage" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-gz-5R2" customClass="CustomTextField" customModule="OCBCAssessment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="100" width="374" height="90"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="RJy-6t-TMQ"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Password is required"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showErrorMessage" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkV-Ij-pUF" customClass="CustomTextField" customModule="OCBCAssessment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="200" width="374" height="90"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="bTH-IV-NMp"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Confirm Password"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Confirm password not match"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showErrorMessage" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="taB-X7-uKZ">
+                                            <rect key="frame" x="0.0" y="408.5" width="374" height="309.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FbB-ox-Pvu">
+                                            <rect key="frame" x="0.0" y="758" width="374" height="60"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-99-4vO" customClass="CustomButton" customModule="OCBCAssessment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="4Tb-kK-9v5"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Register"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="9Tx-jO-xvu" secondAttribute="bottom" constant="10" id="5hh-4J-hU4"/>
+                                <constraint firstAttribute="trailing" secondItem="9Tx-jO-xvu" secondAttribute="trailing" constant="20" id="6rY-GL-Gbn"/>
+                                <constraint firstItem="9Tx-jO-xvu" firstAttribute="leading" secondItem="qSZ-M3-vm0" secondAttribute="leading" constant="20" id="MMm-UB-2Os"/>
+                                <constraint firstItem="9Tx-jO-xvu" firstAttribute="top" secondItem="qSZ-M3-vm0" secondAttribute="top" id="ec9-XT-gtk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qSZ-M3-vm0" secondAttribute="bottom" id="1tq-6d-XCi"/>
+                        <constraint firstItem="qSZ-M3-vm0" firstAttribute="top" secondItem="cqc-25-PFB" secondAttribute="top" id="KBq-qL-ZC2"/>
+                        <constraint firstItem="qSZ-M3-vm0" firstAttribute="height" secondItem="cqc-25-PFB" secondAttribute="height" priority="250" id="Rfd-IS-G6s"/>
+                        <constraint firstItem="qSZ-M3-vm0" firstAttribute="width" secondItem="cqc-25-PFB" secondAttribute="width" id="mOI-6a-acQ"/>
+                        <constraint firstAttribute="trailing" secondItem="qSZ-M3-vm0" secondAttribute="trailing" id="nek-TE-Uyz"/>
+                        <constraint firstItem="qSZ-M3-vm0" firstAttribute="leading" secondItem="cqc-25-PFB" secondAttribute="leading" id="t7n-ad-uGk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cqc-25-PFB" secondAttribute="bottom" id="VMY-hX-f1u"/>
+                <constraint firstItem="cqc-25-PFB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Z4K-2s-vOf"/>
+                <constraint firstItem="cqc-25-PFB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cia-ve-jg0"/>
+                <constraint firstItem="cqc-25-PFB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z67-x5-b0l"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
